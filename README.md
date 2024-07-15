@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# FoodieDelight
 
-Currently, two official plugins are available:
+A simple food ordering website's frontend using React.js and Typescript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Client:** React, Ant Design, TailwindCSS, Typescript, Axios, Moment.js
+- **Server:** Json Server
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## How to start
+
+- Clone the project
+- `npm i` in your local machine. To install all the required dependencies.
+- `npm run dev` to start the project
+- `npm run serve-json` to start the json-server
+
+
+## Website Screenshots
+
+- ### Homepage
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-home.png)
+
+- ### Login / Registration
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-login.png)
+
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-register.png)
+
+- ### Restaurant Details
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-restaurant-details.png)
+
+- ### Restaurants Listing
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-restaurants-listing.png)
+
+- ### Restaurants Search
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-search.png)
+
+- ### Navbar after login
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-navbar-after-login.png)
+
