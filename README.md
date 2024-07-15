@@ -23,7 +23,7 @@ A simple food ordering website's frontend using React.js and Typescript.
 ## Website Screenshots
 
 - ### Homepage
-![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-home.png)
+![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-home-ss.png)
 
 - ### Login / Registration
 ![App Screenshot](https://github.com/saad696/FoodieDelight-TB/blob/main/website-screenshots/fd-login.png)
