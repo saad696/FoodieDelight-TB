@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Empty, Select } from 'antd';
+import { Col, Empty, Row, Select } from 'antd';
 import { useDebounce } from '@uidotdev/usehooks';
 import { useSignal } from '@preact/signals-react';
 import { useNavigate } from 'react-router-dom';
@@ -78,25 +78,31 @@ const SearchBox = <T extends Record<string, string | number>>({
             }))}
             optionRender={(option) =>
                 customOptions && searchFor === constants.RESTAURANTS ? (
-                    <div className='flex items-center justify-between'>
-                        <div className='flex items-center'>
-                            <img
-                            className='rounded mr-2'
-                                src={option.data.image as string}
-                                alt={option.data.label as string}
-                                width={50}
-                            />
-                            <div>
-                                <b className='block'>{option.data.label}</b>
-                                <small className='block'>
-                                    {option.data.address}
-                                </small>
+                    <Row align={'middle'} justify={'space-between'}>
+                        <Col xs={18}>
+                            <div className='flex items-center'>
+                                <img
+                                    className='rounded mr-2'
+                                    src={option.data.image as string}
+                                    alt={option.data.label as string}
+                                    width={50}
+                                />
+                                <div>
+                                    <b className='block text-xs md:text-sm'>
+                                        {option.data.label}
+                                    </b>
+                                    <small className='block'>
+                                        {option.data.address}
+                                    </small>
+                                </div>
                             </div>
-                        </div>
-                        <div className='font-semibold'>
-                            Ratings: {option.data.rating} <StarTwoTone />
-                        </div>
-                    </div>
+                        </Col>
+                        <Col xs={6}>
+                            <div className='font-semibold text-xs md:text-sm'>
+                                Ratings: {option.data.rating} <StarTwoTone />
+                            </div>
+                        </Col>
+                    </Row>
                 ) : (
                     <b className='block'>{option.data.label}</b>
                 )
